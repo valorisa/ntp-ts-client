@@ -46,7 +46,7 @@ Before running the project, ensure you have the following installed on your syst
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/ntp-ts-client.git
+   git clone https://github.com/valorisa/ntp-ts-client.git
    cd ntp-ts-client
    ```
 
