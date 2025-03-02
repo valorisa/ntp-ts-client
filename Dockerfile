@@ -1,5 +1,5 @@
-# Étape 1: Utiliser une image de base Node.js sur Alpine Linux
-FROM node:18-alpine AS builder
+# Étape 1: Utiliser une image de base Node.js sur Alpine Linux (version 22)
+FROM node:22-alpine AS builder
 
 # Définir le répertoire de travail dans le conteneur
 WORKDIR /app
@@ -30,7 +30,7 @@ RUN npm run build
 RUN npm prune --production
 
 # Étape 2: Créer une image de production légère
-FROM node:18-alpine
+FROM node:22-alpine
 
 # Définir le répertoire de travail dans le conteneur de production
 WORKDIR /app
