@@ -98,7 +98,7 @@ Test Suites: 1 passed, 1 total
 Tests: 1 passed, 1 total
 ```
 
-The test verifies that the getNTPTime() method of the NTPClient class returns a valid Date object. If you add more tests, they will also be executed here.
+The test verifies that the `getNTPTime()` method of the `NTPClient` class returns a valid Date object. If you add more tests, they will also be executed here.
 
 ---
 
