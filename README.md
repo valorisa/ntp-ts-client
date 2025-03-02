@@ -93,8 +93,28 @@ Example test output:
 ## Directory Structure
 
 Here is the structure of the project:
-
-
+```
+ntp-ts-client/
+├── Dockerfile               # Docker configuration for containerization
+├── dist/                    # Compiled JavaScript files (output of `npm run build`)
+│   ├── main.js              # Entry point of the application (compiled)
+│   └── ntp-client.js        # NTP client implementation (compiled)
+├── node_modules/            # Installed dependencies (not versioned, ignored by `.gitignore`)
+│   ├── @types/              # TypeScript type definitions
+│   │   └── node/            # Type definitions for Node.js
+│   ├── typescript/          # TypeScript compiler and related files
+│   └── undici-types/        # Additional type definitions or libraries
+├── package-lock.json        # Lock file for dependency versions
+├── package.json             # Project configuration and scripts
+├── src/                     # Source TypeScript files
+│   ├── main.ts              # Entry point of the application (TypeScript source)
+│   └── ntp-client.ts        # NTP client implementation (TypeScript source)
+├── test/                    # Test files (optional, if tests are added)
+│   └── ntp-client.spec.ts   # Unit tests for NTP client (if applicable)
+├── tsconfig.json            # TypeScript configuration
+├── README.md                # Documentation for the project
+└── .gitignore               # Specifies intentionally untracked files to ignore
+```
 ---
 
 ## Contributing
