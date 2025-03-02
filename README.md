@@ -89,6 +89,17 @@ This will execute all tests defined in the `test/` directory using Jest. The tes
 
 Example test output:
 
+```
+PASS test/ntp-client.spec.ts
+NTPClient
+✓ should return a valid Date (5 ms)
+
+Test Suites: 1 passed, 1 total
+Tests: 1 passed, 1 total
+```
+
+The test verifies that the getNTPTime() method of the NTPClient class returns a valid Date object. If you add more tests, they will also be executed here.
+
 ---
 
 ## Directory Structure
