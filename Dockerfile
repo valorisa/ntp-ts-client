@@ -11,14 +11,18 @@ COPY package*.json ./
 RUN apk add --no-cache python3 make g++
 
 # Mettre à jour npm (optionnel, mais recommandé)
-RUN npm install -g npm@latest
+RUN npm install -g npm@10
 
 # Configurer des timeouts plus longs pour npm
-RUN npm config set fetch-retry-mintimeout 20000 && \
-    npm config set fetch-retry-maxtimeout 120000
+RUN npm config set fetch-retry-mintimeout 60000 && \
+    npm config set fetch-retry-maxtimeout 300000 && \
+    npm config set registry https://registry.npmjs.org/
+
+# Nettoyer le cache npm
+RUN npm cache clean --force
 
 # Installer les dépendances npm
-RUN npm install
+RUN npm install --verbose
 
 # Copier les fichiers source dans le conteneur
 COPY . .
