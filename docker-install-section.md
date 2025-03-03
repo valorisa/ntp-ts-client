@@ -10,7 +10,7 @@ This project can be installed and run using Docker. Follow the steps below to bu
 1. **Clone the Repository**:
    Download the source code of the project onto your machine:
    ```bash
-   git clone https://github.com/your-username/ntp-ts-client.git
+   git clone https://github.com/valorisa/ntp-ts-client.git
    cd ntp-ts-client
    ```
 
