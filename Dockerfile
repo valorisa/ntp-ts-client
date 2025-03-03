@@ -7,10 +7,13 @@ WORKDIR /app
 # Copier package.json et package-lock.json pour installer les dépendances
 COPY package*.json ./
 
+# Copier le fichier .npmrc dans le conteneur
+COPY .npmrc ./
+
 # Installer les outils nécessaires à la compilation (dépendances système)
 RUN apk add --no-cache python3 make g++
 
-# Mettre à jour npm (optionnel, mais recommandé)
+# Mettre à jour npm vers la dernière version stable
 RUN npm install -g npm@10
 
 # Configurer des timeouts plus longs pour npm
