@@ -33,7 +33,7 @@ This project can be installed and run using Docker. Follow the steps below to bu
    ```bash
    docker logs <container-id>
    ```
-   Replace `<container-id>` with the actual container ID (visible with `docker ps`).
+   Replace `<container-id>` with the actual container ID (visible with `docker ps -as`).
 
 5. **Access the Container Shell (Optional)**:
    To interact directly with the container, open an interactive shell:
