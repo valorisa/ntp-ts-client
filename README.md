@@ -4,6 +4,7 @@
 
 <!-- Table of Contents -->
 ## Table of Contents
+
 - [Overview](#overview)
 - [Features](#features)
 - [Getting Started](#getting-started)
@@ -46,22 +47,26 @@ Before running the project, ensure you have the following installed on your syst
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/valorisa/ntp-ts-client.git
    cd ntp-ts-client
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    ```
 
 3. Build the project:
+
    ```bash
    npm run build
    ```
 
 4. Start the application:
+
    ```bash
    npm start
    ```
@@ -81,6 +86,7 @@ You can customize the NTP server by modifying the `src/main.ts` file or passing 
 ## Testing
 
 To run the tests, execute the following command:
+
    ```bash
    npm test
    ```
@@ -89,7 +95,7 @@ This will execute all tests defined in the `test/` directory using Jest. The tes
 
 Example test output:
 
-```
+```bash
 PASS test/ntp-client.spec.ts
 NTPClient
 ✓ should return a valid Date (5 ms)
@@ -105,7 +111,8 @@ The test verifies that the `getNTPTime()` method of the `NTPClient` class return
 ## Directory Structure
 
 Here is the structure of the project:
-```
+
+```bash
 ntp-ts-client/
 ├── Dockerfile               # Docker configuration for containerization
 ├── dist/                    # Compiled JavaScript files (output of `npm run build`)
@@ -127,6 +134,7 @@ ntp-ts-client/
 ├── README.md                # Documentation for the project
 └── .gitignore               # Specifies intentionally untracked files to ignore
 ```
+
 ---
 
 ## Contributing
